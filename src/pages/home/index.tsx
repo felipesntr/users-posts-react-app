@@ -4,6 +4,7 @@ import { Card } from "../../components/card";
 import { Error } from "../../components/error";
 import Logo from "./assets/images/growth-tech-logo.svg";
 import "./styles.scss";
+import { ProfileCTA } from "../../components/cta/ProfileCTA";
 
 export type Post_t = {
   id: string;
@@ -52,6 +53,7 @@ export const Home = () => {
           )}
         </div>
       </div>
+      <ProfileCTA />
     </>
   );
 };
