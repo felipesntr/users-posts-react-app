@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { findAllPosts } from "../../services/posts/posts.service";
 import { Card } from "../../components/card";
 import { Error } from "../../components/error";
+import Logo from "./assets/images/growth-tech-logo.svg";
 import "./styles.scss";
 
 export type Post_t = {
@@ -32,8 +33,9 @@ export const Home = () => {
     <>
       <div className="home">
         <div className="header">
-          <h1>All posts online</h1>
+          <img src={Logo} width="150px" />
         </div>
+        <h1>All posts online</h1>
         <div className="posts-container">
           {posts && error == "" ? (
             posts.map((post) => (
