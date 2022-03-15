@@ -1,7 +1,5 @@
 import environment from "../../environment";
 
-import axios from "axios";
-
 const posts_url = environment.posts_url;
 
 export const findAllPosts = async () => {
